@@ -1,4 +1,5 @@
-import type { Config } from "tailwindcss";
+import { nextui } from "@nextui-org/react"
+import type { Config } from "tailwindcss"
 
 const config: Config = {
   content: [
@@ -13,8 +14,11 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sans: ["Noto Sans JP", "Asap Condensed"],
+      },
     },
   },
-  plugins: [],
-};
-export default config;
+  plugins: [nextui()],
+}
+export default config
